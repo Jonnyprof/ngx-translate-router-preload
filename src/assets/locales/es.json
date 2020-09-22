@@ -1,0 +1,10 @@
+{
+  "ROUTES.HOME": "inicio",
+  "ROUTES.LOGIN": "acceso",
+  "ROUTES.PASSWORD": "contrasena",
+  "ROUTES.RESET": "cambia",
+  "CHANGE_LANGUAGE": "Cambiar idioma",
+  "GO_HOME": "Ir al inicio",
+  "GO_LOGIN": "Identificarse",
+  "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?"
+}
