@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LocalizeRouterModule } from '@gilsdav/ngx-translate-router';
 
-import { ResetComponent } from 'src/app/password/reset/reset.component';
+import { ResetComponent } from './reset/reset.component';
 
 const routes: Routes = [{
   path: 'RESET',

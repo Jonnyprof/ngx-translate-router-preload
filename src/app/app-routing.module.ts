@@ -14,22 +14,22 @@ export function HttpLoaderFactory(translate: TranslateService, location: Locatio
 const routes: Routes = [
   {
     path: 'LOGIN',
-    loadChildren: () => import('src/app/login/login.module').then(m => m.LoginModule)
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   },
   {
     path: 'PASSWORD',
-    loadChildren: () => import('src/app/password/password.module').then(m => m.PasswordModule)
+    loadChildren: () => import('./password/password.module').then(m => m.PasswordModule)
   },
   {
     path: '**',
-    loadChildren: () => import('src/app/not-found/not-found.module').then(m => m.NotFoundModule)
+    loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule)
   }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      preloadingStrategy: PreloadAllModules
+      preloadingStrategy: PreloadAllModules // Comment this line to work as expected
     }),
     LocalizeRouterModule.forRoot(routes, {
       parser: {
